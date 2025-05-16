@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0;url=https://megaworkconsult.sharepoint.com/sites/Portal/" />
-    <script>
-      window.location.href = "https://megaworkconsult.sharepoint.com/sites/Portal/";
-    </script>
+    <meta charset="UTF-8" />
     <title>Redirecionando...</title>
+    <script type="text/javascript">
+      // Força abrir no navegador (fora do Teams)
+      window.onload = function () {
+        // Link do seu portal
+        var url = "https://megaworkconsult.sharepoint.com/sites/portal";
+
+        // Abre nova aba
+        window.open(url, "_blank");
+
+        // Fecha esta aba se estiver dentro do Teams (opcional)
+        window.close();
+      };
+    </script>
   </head>
   <body>
-    Se você não for redirecionado, <a href="https://megaworkconsult.sharepoint.com/sites/Portal/">clique aqui</a>.
+    <p>Redirecionando para o Portal...</p>
   </body>
 </html>
